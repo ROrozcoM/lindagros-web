@@ -5,26 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Productos - Lindagro</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <section class="hero-light">
+  <!-- HEADER GLOBAL -->
+  <nav id="navbar">
+    <div class="nav-container">
+        <!-- Logo + texto -->
+      <a href="index.html" class="logo-group">
+        <img id="logo-img" src="images/new.png" alt="Logo" />
+        <span class="logo-text">Lindagro</span>
+      </a>
+        <!-- Menú horizontal (centrado) -->
+        <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienessomos.html">Quiénes somos</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <!-- Botón de contacto (derecha) -->
+        <div class="nav-contact">
+        <a href="#contacto" class="btn-contacto">Contacto</a>
+        </div>
+
+        <!-- Icono burger (solo visible en móvil) -->
+        <div class="burger" id="burger">&#9776;</div>
+    </div>
+
+    <!-- Menú lateral móvil -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+        <div class="logo">Lindagro</div>
+        <div class="close" id="closeBtn">&times;</div>
+        </div>
+        <ul class="mobile-nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienessomos.html">Quiénes somos</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+    </nav>
+
+  <!-- PORTADA DE PRODUCTOS -->
+  <header class="hero-light">
     <h1>Nuestras soluciones</h1>
-    <p>Controla tu riego y tus cultivos desde cualquier lugar</p>
+    <p>Acompañamos tu decisión de compra con datos y asesoramiento profesional</p>
+  </header>
+
+  <!-- PORTALES DE VENTA -->
+  <section class="portales">
+    <h2>Presentes en los principales portales</h2>
+    <div class="portales-logos">
+      <img src="images/cocampo.png" alt="Cocampo">
+      <img src="images/idealista.jpg" alt="Idealista">
+      <img src="images/thinkspain.png" alt="ThinkSpain">
+    </div>
   </section>
 
-  <section class="cards-container">
-    <div class="product-card">
-      <img src="images/producto1.jpg" alt="Sensor 1">
-      <h3>Riego por satélite</h3>
-    </div>
-    <div class="product-card">
-      <img src="images/producto2.jpg" alt="Sensor 2">
-      <h3>Control de humedad</h3>
-    </div>
-    <div class="product-card">
-      <img src="images/producto3.jpg" alt="App movil">
-      <h3>App para agricultores</h3>
+  <!-- FINCAS EN CARTERA -->
+  <section class="fincas">
+    <h2>Algunas fincas en cartera</h2>
+    <div class="cards-container">
+      <div class="product-card">
+        <img src="images/finca1.jpg" alt="Finca 1">
+        <h3>Finca olivar ecológico · Jaén</h3>
+      </div>
+      <div class="product-card">
+        <img src="images/finca2.jpg" alt="Finca 2">
+        <h3>Almendros en producción · Granada</h3>
+      </div>
+      <div class="product-card">
+        <img src="images/finca3.jpg" alt="Finca 3">
+        <h3>Proyecto de pistacho con riego · Albacete</h3>
+      </div>
     </div>
   </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
