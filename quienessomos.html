@@ -1,34 +1,97 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quienes Somos - Lindagro</title>
+  <title>Quiénes Somos | Lindagro</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <section class="hero-light">
-    <h1>Conectando agricultura e innovación</h1>
-    <p>Nuestra misión: transformar la gestión hídrica mediante tecnología satelital</p>
+
+  <!-- HEADER GLOBAL -->
+  <nav id="navbar">
+    <div class="nav-container">
+        <!-- Logo + texto -->
+      <a href="index.html" class="logo-group">
+        <img id="logo-img" src="images/new.png" alt="Logo" />
+        <span class="logo-text">Lindagro</span>
+      </a>
+        <!-- Menú horizontal (centrado) -->
+        <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienessomos.html">Quiénes somos</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <!-- Botón de contacto (derecha) -->
+        <div class="nav-contact">
+        <a href="#contacto" class="btn-contacto">Contacto</a>
+        </div>
+
+        <!-- Icono burger (solo visible en móvil) -->
+        <div class="burger" id="burger">&#9776;</div>
+    </div>
+
+    <!-- Menú lateral móvil -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+        <div class="logo">Lindagro</div>
+        <div class="close" id="closeBtn">&times;</div>
+        </div>
+        <ul class="mobile-nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienessomos.html">Quiénes somos</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+    </nav>
+
+
+  <!-- PORTADA QUIÉNES SOMOS -->
+  <header class="quienes-hero">
+    <div class="quienes-overlay">
+      <h4>LINDAGRO Due Diligence</h4>
+      <h1>¿Cómo trabajamos?</h1>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="quienes-main">
+  <section class="quienes-intro">
+    <h2>¿Qué hacemos?</h2>
+    <p>En Lindagro facilitamos la compraventa de fincas rústicas mediante un proceso técnico, transparente y profesional. Trabajamos directamente con propietarios que desean vender su finca, desarrollando un estudio completo de viabilidad agronómica y económica (due diligence) que aporta al comprador toda la información necesaria para tomar decisiones de inversión seguras y fundamentadas.</p>
   </section>
 
-  <section class="about-columns">
-    <div class="column">
-      <h2>Misión</h2>
-      <p>Optimizar el uso del agua y aumentar la productividad de cultivos leñosos en zonas mediterráneas.</p>
-    </div>
-    <div class="column">
-      <h2>Visión</h2>
-      <p>Ser referentes globales en agricultura de precisión aplicada a riego.</p>
-    </div>
-    <div class="column">
-      <h2>Valores</h2>
-      <p>Innovación, compromiso agronómico y sostenibilidad.</p>
-    </div>
+  <section class="quienes-valores">
+    <h2>Nuestro enfoque</h2>
+    <ul>
+      <li><strong>Análisis agronómico riguroso:</strong> Estudiamos el potencial productivo, el uso del suelo, la disponibilidad hídrica y la eficiencia de manejo de cada finca, gracias al trabajo de nuestro equipo de ingenieros agrónomos.</li>
+      <li><strong>Estudio económico e inversor:</strong> Evaluamos los escenarios de rentabilidad, costes operativos y oportunidades de transformación de uso agrícola o patrimonial, de la mano de expertos en planificación financiera.</li>
+      <li><strong>Asesoramiento administrativo:</strong> Guiamos a ambas partes del proceso (vendedor y comprador) con claridad jurídica y documental, asegurando un proceso ágil y sin incertidumbres.</li>
+    </ul>
   </section>
 
-  <section class="about-image">
-    <img src="images/equipo-lindagro.jpg" alt="Equipo Lindagro">
-  </section>
+  <div class="equipo-perfiles">
+    <div class="perfil">
+      <img src="images/IMG_31311.jpg" alt="Foto de Ana" />
+      <h4>Ana Martínez</h4>
+      <p>Ingeniera Agrónoma</p>
+    </div>
+    <div class="perfil">
+      <img src="images/IMG_31311.jpg" alt="Foto de Javier" />
+      <h4>Javier López</h4>
+      <p>Analista Financiero</p>
+    </div>
+    <div class="perfil">
+      <img src="images/IMG_31311.jpg" alt="Foto de Laura" />
+      <h4>Laura Sánchez</h4>
+      <p>Gestora de Activos Rurales</p>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
