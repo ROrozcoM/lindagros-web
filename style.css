@@ -537,7 +537,7 @@ nav#navbar.scrolled .burger {
 .hero-light {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 70vh;
   background: url('images/DJI_0264.JPG') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
@@ -705,6 +705,49 @@ nav#navbar.scrolled .burger {
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
   padding: 2rem;
+}
+.hero-light-contact {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background: url('images/DJI_0264.JPG') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  overflow: hidden;
+}
+/* Capa difuminada encima del fondo */
+.hero-light-contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.4); /* oscurece un poco el fondo */
+  z-index: 1;
+}
+
+.hero-light-contact h1,
+.hero-light-contact p {
+  z-index: 2;
+  position: relative;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-light-contact h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-light-contact p {
+  font-size: 1.3rem;
+  max-width: 800px;
 }
 
 /* Footer */

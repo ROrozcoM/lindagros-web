@@ -3,11 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto - Lindagro</title>
+  <title>Productos - Lindagro</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <section class="hero-light">
+<!-- HEADER GLOBAL -->
+  <nav id="navbar">
+    <div class="nav-container">
+        <!-- Logo + texto -->
+      <a href="index.html" class="logo-group">
+        <img id="logo-img" src="images/new.png" alt="Logo" />
+        <span class="logo-text">Lindagro</span>
+      </a>
+        <!-- Menú horizontal (centrado) -->
+        <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienessomos.html">Quiénes somos</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <!-- Botón de contacto (derecha) -->
+        <div class="nav-contact">
+        <a href="#contacto" class="btn-contacto">Contacto</a>
+        </div>
+
+        <!-- Icono burger (solo visible en móvil) -->
+        <div class="burger" id="burger">&#9776;</div>
+    </div>
+
+    <!-- Menú lateral móvil -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+        <div class="logo">Lindagro</div>
+        <div class="close" id="closeBtn">&times;</div>
+        </div>
+        <ul class="mobile-nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienessomos.html">Quiénes somos</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+    </nav>
+
+  <section class="hero-light-contact">
     <h1>¡Conversemos!</h1>
     <p>Cuéntanos tus necesidades agronómicas y te ayudaremos a optimizar tu finca</p>
   </section>
@@ -21,10 +62,12 @@
     </form>
 
     <div class="contact-info">
-      <p><strong>Tel:</strong> +34 600 000 000</p>
+      <p><strong>Tel:</strong> +34 665 74 58 49</p>
       <p><strong>Email:</strong> info@lindagro.com</p>
-      <p><strong>Ubicación:</strong> Jaén, España</p>
+      <p><strong>Ubicación:</strong> Córdoba, España</p>
     </div>
   </section>
+
+   <script src="script.js"></script>
 </body>
 </html>
