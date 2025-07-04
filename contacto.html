@@ -54,12 +54,21 @@
   </section>
 
   <section class="contact-form-section">
-    <form class="contact-form">
-      <input type="text" placeholder="Nombre" required />
-      <input type="email" placeholder="Correo electrónico" required />
-      <textarea placeholder="Mensaje" rows="6" required></textarea>
-      <button type="submit" class="btn-gradient">Enviar mensaje</button>
-    </form>
+  <form class="contact-form" id="formulario" action="https://formspree.io/f/movwbzqk" method="POST">
+    <input type="text" name="nombre" placeholder="Nombre" required />
+    <input type="email" name="email" placeholder="Correo electrónico" required />
+    <textarea name="mensaje" placeholder="Mensaje" rows="6" required></textarea>
+
+    <!-- campo honeypot anti-bots -->
+    <input type="text" name="_gotcha" style="display:none" />
+
+    <button type="submit" class="btn-gradient">Enviar mensaje</button>
+  </form>
+
+  <!-- Mensaje oculto por defecto -->
+  <div id="form-mensaje" style="display:none; margin-top:1rem; color:green; font-weight:bold;">
+    ¡Tu mensaje ha sido enviado con éxito! Te responderemos pronto.
+  </div>
 
     <div class="contact-info">
       <p><strong>Tel:</strong> +34 665 74 58 49</p>
