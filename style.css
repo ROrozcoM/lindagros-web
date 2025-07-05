@@ -709,7 +709,7 @@ nav#navbar.scrolled .burger {
 .hero-light-contact {
   position: relative;
   width: 100%;
-  height: 30vh;
+  height: 35vh;
   background: url('images/DJI_0239.JPG') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
@@ -717,7 +717,7 @@ nav#navbar.scrolled .burger {
   align-items: center;
   text-align: center;
   color: white;
-  padding: 2rem;
+  padding: 1rem;
   overflow: hidden;
 }
 /* Capa difuminada encima del fondo */
@@ -741,7 +741,7 @@ nav#navbar.scrolled .burger {
 }
 
 .hero-light-contact h1 {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
